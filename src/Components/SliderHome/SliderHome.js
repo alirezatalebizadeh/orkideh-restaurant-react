@@ -1,4 +1,7 @@
 import React, { useRef } from 'react'
+//typeWriter library
+import { Typewriter } from 'react-simple-typewriter'
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -25,7 +28,7 @@ export default function SliderHome () {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 12500,
+          delay: 7000,
           disableOnInteraction: false
         }}
         pagination={{
@@ -38,17 +41,51 @@ export default function SliderHome () {
       >
         <SwiperSlide>
           <div class='info'>
-            <h1 id='title'>رستوران زنجیره ای ارکیده</h1>
+            <h1 className='title'>
+              <Typewriter
+                loop
+                cursor
+                cursorStyle='.'
+                typeSpeed={30}
+                deleteSpeed={60}
+                delaySpeed={1000}
+                words={[
+                  'رستوران زنجیره ای ارکیده',
+                  'بهترین رستوران ایران',
+                  'بهترین کافه ها'
+                ]}
+                onLoop={loopCount =>
+                  console.log(`Just completed loop ${loopCount}`)
+                }
+              />
+            </h1>
             <h4>طعم و کیفیت واقعی غذا را با ما تجربه کنید</h4>
           </div>
-          <img loading='lazy' src='images/1.jpg' alt='' />
+          <img src='images/1.jpg' alt='' />
         </SwiperSlide>
         <SwiperSlide>
           <div class='info'>
-            <h1 id='title'>رستوران زنجیره ای ارکیده</h1>
-            <h4>طعم و کیفیت واقعی غذا را با ما تجربه کنید</h4>
+            <h1 className='title'>
+              <Typewriter
+                loop
+                cursor
+                cursorStyle='.'
+                typeSpeed={30}
+                deleteSpeed={60}
+                delaySpeed={1000}
+                words={[
+                  'رستوران زنجیره ای ارکیده',
+                  'بهترین رستوران ایران',
+                  'بهترین کافه ها'
+                ]}
+                onLoop={loopCount =>
+                  console.log(`Just completed loop ${loopCount}`)
+                }
+              />
+            </h1>
+            <h4> پذیرای قدم های گرم شما هستیم</h4>
           </div>
-          <img loading='lazy' src='images/arjantin.jpg' alt='' />
+          <img src='images/arjantin.jpg' alt='' />
         </SwiperSlide>
 
         <div className='autoplay-progress' slot='container-end'>
