@@ -1,7 +1,6 @@
 import Header from "./Components/Header/Header";
+import Home from "./Pages/Home/Home";
 
-let routes = [
-    { path: '*', element: <h1>routes</h1> }
-]
+let routes = [{ path: "/home", element: <Home /> }];
 
-export default routes
+export default routes;

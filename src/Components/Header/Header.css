@@ -1,3 +1,9 @@
 .logo_brand {
   max-width: 110px;
 }
+
+.item_link {
+  color: black !important;
+  text-align: right;
+  margin-top: 1rem;
+}

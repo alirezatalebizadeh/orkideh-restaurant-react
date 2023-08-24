@@ -4,7 +4,9 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Footer.css";
+
 export default function Footer() {
   return (
     <footer className="footer-area bg-f">
@@ -50,25 +52,35 @@ export default function Footer() {
           </Col>
           <Col md={6} lg={3} className="text-right">
             <h3 className="text-right">شعبه ها</h3>
-            <p className="lead"> سعادت اباد-جاده چالوش</p>
-            <p className="lead"> اقدسیه-متل قو</p>
-            <p>ارژانتین-مهستان-شهریار</p>
+            <ul>
+              <li>
+                <Link to="">سعادت اباد</Link>
+              </li>
+              <li>
+                <Link> جاده چالوس </Link>
+              </li>
+              <li>
+                <Link> اقدسیه</Link>
+              </li>
+              <li>
+                <Link>متل قو </Link>
+              </li>
+              <li>
+                <Link> مهستان</Link>
+              </li>
+              <li>
+                <Link> ارژانتین</Link>
+              </li>
+              <li>
+                <Link> شهریار</Link>
+              </li>
+            </ul>
           </Col>
           <Col md={6} lg={3} className="text-right">
             <h3>ساعات کار</h3>
             <p>
-              <span className="text-color">شنبه-یک شنبه :</span> 12:00 - 24:00{" "}
-            </p>
-            <p>
-              <span className="text-color">دو شنبه-سه شنبه : </span>12:00 -
-              24:00{" "}
-            </p>
-            <p>
-              <span className="text-color">چهار شنبه-پنج شنبه :</span> 12:00 -
-              24:00{" "}
-            </p>
-            <p>
-              <span className="text-color">جمعه :</span> 12:00 - 24:00{" "}
+              همه روزه از ساعت 12 ظهر تا 12 شب
+              <br /> میزبان قدم های گرم شما هستیم
             </p>
           </Col>
           <Col md={6} lg={3}>

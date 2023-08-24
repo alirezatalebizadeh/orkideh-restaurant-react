@@ -8,6 +8,7 @@ import {
   Offcanvas,
   NavDropdown,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
@@ -16,11 +17,13 @@ export default function Header() {
       <Container fluid>
         <Navbar.Brand href="#">
           <img
+            loading="lazy"
             src="images/logo-orkideh-w-01.png"
             className="logo_brand"
             alt="logo"
           />
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${false}`}
@@ -28,14 +31,21 @@ export default function Header() {
           placement="end"
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${false}`}>
-              Offcanvas
-            </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
+              <Link className="item_link" to="/home">
+                صفحه اصلی
+              </Link>
+              <Link className="item_link" to="/gallery">
+                گالری
+              </Link>
+              <Link className="item_link" to="/menus">
+                منوی غذا
+              </Link>
+              <Link className="item_link" to="/marasem">
+                شرح مراسم
+              </Link>
               <NavDropdown
                 title="Dropdown"
                 id={`offcanvasNavbarDropdown-expand-${false}`}

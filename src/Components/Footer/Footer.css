@@ -7,7 +7,10 @@
   padding-bottom: 0px;
   direction: rtl;
 }
-
+.footer-area ul {
+  list-style: none;
+  line-height: 30px;
+}
 .bg-f {
   background-image: url("./../../../public/images/footer-bg.jpg");
   background-attachment: scroll;
