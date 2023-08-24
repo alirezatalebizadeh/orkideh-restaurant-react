@@ -13,4 +13,9 @@ body {
 a {
   text-decoration: none !important;
   color: #fff !important;
+  transition: 0.2s all !important;
+}
+a:hover {
+  color: rgba(71, 71, 220, 0.763) !important;
+  transform: scale(1) !important;
 }

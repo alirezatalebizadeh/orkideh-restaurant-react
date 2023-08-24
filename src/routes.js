@@ -5,7 +5,7 @@ import Marasem from "./Pages/Marasem/Marasem";
 import Menus from "./Pages/Menus/Menus";
 
 let routes = [
-  { path: "/home", element: <Home /> },
+  { path: "/", element: <Home /> },
   { path: "/gallery", element: <Gallery /> },
   { path: "/menus", element: <Home /> },
   { path: "/marasem", element: <Marasem /> },

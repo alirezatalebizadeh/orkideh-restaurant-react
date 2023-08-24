@@ -11,6 +11,10 @@ import {
 import { Link } from "react-router-dom";
 import "./Header.css";
 
+
+
+
+
 export default function Header() {
   return (
     <Navbar expand={false} className="bg-body-tertiary mb-3">
@@ -30,8 +34,7 @@ export default function Header() {
           aria-labelledby={`offcanvasNavbarLabel-expand-${false}`}
           placement="end"
         >
-          <Offcanvas.Header closeButton>
-          </Offcanvas.Header>
+          <Offcanvas.Header closeButton></Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Link className="item_link" to="/home">
@@ -46,28 +49,25 @@ export default function Header() {
               <Link className="item_link" to="/marasem">
                 شرح مراسم
               </Link>
-              <NavDropdown
+              {/* <NavDropdown
+                className="Drop_down"
                 title="Dropdown"
                 id={`offcanvasNavbarDropdown-expand-${false}`}
               >
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
+                <a href="#action3">Action</a>
+                <a href="#action4">Another action</a>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
+                <a href="#action5">Something else here</a>
+              </NavDropdown> */}
             </Nav>
-            <Form className="d-flex">
+            <Form className="d-flex mt-3">
               <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-primary">Search</Button>
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

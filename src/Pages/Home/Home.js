@@ -1,5 +1,10 @@
-import React from "react";
+import React from 'react'
+import SliderHome from '../../Components/SliderHome/SliderHome'
 
-export default function Home() {
-  return <div>home</div>;
+export default function Home () {
+  return (
+    <div>
+      <SliderHome />
+    </div>
+  )
 }

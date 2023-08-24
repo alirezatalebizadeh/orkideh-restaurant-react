@@ -203,7 +203,9 @@
   background-position: center;
   background-size: cover;
 }
-
+footer a {
+  transform: scale(1.2) !important;
+}
 /*------------------------------------------------------------------
    end style of Footer
 -------------------------------------------------------------------*/
