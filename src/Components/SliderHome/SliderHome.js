@@ -46,8 +46,8 @@ export default function SliderHome () {
                 loop
                 cursor
                 cursorStyle='.'
-                typeSpeed={30}
-                deleteSpeed={60}
+                typeSpeed={40}
+                deleteSpeed={50}
                 delaySpeed={1000}
                 words={[
                   'رستوران زنجیره ای ارکیده',
@@ -90,7 +90,7 @@ export default function SliderHome () {
 
         <div className='autoplay-progress' slot='container-end'>
           <svg viewBox='0 0 48 48' ref={progressCircle}>
-            <circle cx='24' cy='24' r='20'></circle>
+            <circle cx='25' cy='25' r='20'></circle>
           </svg>
           <span ref={progressContent}></span>
         </div>
@@ -98,32 +98,3 @@ export default function SliderHome () {
     </div>
   )
 }
-
-// <div class="swiper mySwiper">
-//     <div class="swiper-wrapper">
-//       <div class="swiper-slide">
-//         <div class="info">
-//           <h1 id="title">رستوران زنجیره ای ارکیده</h1>
-//           <h4>طعم و کیفیت واقعی غذا را با ما تجربه کنید</h4>
-//         </div>
-//         <img loading="lazy" src="/images/1.jpg" alt="" />
-//       </div>
-
-//       <div class="swiper-slide">
-//         <div class="info">
-//           <h1 id="title">رستوران زنجیره ای ارکیده</h1>
-//           <h4>طعم و کیفیت واقعی غذا را با ما تجربه کنید</h4>
-//         </div>
-//         <img loading="lazy" src="/images/arjantin.jpg" alt="" />
-//       </div>
-//     </div>
-//     <div class="swiper-button-next"></div>
-//     <div class="swiper-button-prev"></div>
-//     <div class="swiper-pagination"></div>
-//     <div class="autoplay-progress">
-//       <svg viewBox="0 0 48 48">
-//         <circle cx="24" cy="24" r="20"></circle>
-//       </svg>
-//       <span></span>
-//     </div>
-//   </div>
