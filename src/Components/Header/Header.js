@@ -8,12 +8,19 @@ import {
   Offcanvas,
   NavDropdown,
 } from "react-bootstrap";
+import "./Header.css";
 
 export default function Header() {
   return (
     <Navbar expand={false} className="bg-body-tertiary mb-3">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <img
+            src="images/logo-orkideh-w-01.png"
+            className="logo_brand"
+            alt="logo"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${false}`}
