@@ -12,7 +12,7 @@ section .description {
 }
 .description .sliderText {
   max-width: 500px;
-  max-height: 300px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -46,6 +46,28 @@ section .description .info {
 @media screen and (max-width: 996px) {
   .home_content .info h2 {
     margin-bottom: 20px !important;
+  }
+  section .description .sliderText {
+    width: 400px !important;
+    height: 250px !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  section .description {
+    flex-direction: column;
+  }
+
+  section .description.reverse {
+    flex-direction: column-reverse;
+  }
+  section .description .info {
+    width: 100% !important;
+  }
+  .home_content .description .sliderText {
+    width: 100% !important;
+  }
+  .home_content .description {
+    padding: 0 !important;
   }
 }
 .home_content .info h2 {
