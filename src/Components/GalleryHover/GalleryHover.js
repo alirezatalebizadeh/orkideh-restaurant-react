@@ -5,14 +5,13 @@ import orkidehData from '../../Context/Context'
 
 export default function GalleryHover() {
     const contextData = useContext(orkidehData)
-    console.log(contextData.srcImgData);
 
 
     return (
         <div className="GalleryContainer">
             {
-                contextData.srcImgData.map(item => (
-                    <HoverItem src={item}/>
+                contextData.srcImgData.map((item, index) => (
+                    <HoverItem key={index} src={item} />
                 ))
             }
 
