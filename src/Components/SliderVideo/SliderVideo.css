@@ -1,0 +1,27 @@
+.sliderVideo {
+    margin: 20px 0;
+}
+
+
+
+
+
+.sliderVideo .swiper {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.sliderVideo .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderVideo .swiper-slide video {
+    display: block;
+    width: 100%;
+
+}
