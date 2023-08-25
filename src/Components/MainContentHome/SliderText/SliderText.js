@@ -18,7 +18,7 @@ export default function SliderText (props) {
       grabCursor={true}
       modules={[EffectFlip, Autoplay]}
       autoplay={{
-        delay: 3500,
+        delay: 2500,
         disableOnInteraction: false
       }}
       className='mySwiper'

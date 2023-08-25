@@ -1,9 +1,9 @@
 .articles {
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  margin: 15px auto;
   justify-content: space-between;
-  align-items: start;
+  align-items: stretch;
   column-gap: 30px;
 }
 
@@ -46,6 +46,7 @@ article img {
 .article-body {
   text-align: center;
 }
+
 .article-body p {
   font-size: 0.9rem;
 }
@@ -58,12 +59,15 @@ article a {
 article a:focus {
   outline: 1px dotted #28666e;
 }
+
 .articles .read-more {
   color: #27474b !important;
 }
+
 .articles .read-more:hover {
   color: #0b97a6 !important;
 }
+
 .articles .icon {
   font-size: 1.3rem;
 }
@@ -72,19 +76,24 @@ article a:focus {
   .article-body p {
     font-size: 0.8rem;
   }
+
   article h2 {
     font-size: 1.15rem;
   }
+
   .articles {
     flex-direction: column;
   }
+
   article {
     width: 100%;
     margin: 10px 0;
   }
+
   article a {
     font-size: 1rem;
   }
+
   article img {
     display: block;
     margin: 0 auto;

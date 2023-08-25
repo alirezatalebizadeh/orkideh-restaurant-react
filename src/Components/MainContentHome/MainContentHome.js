@@ -61,6 +61,8 @@ export default function MainContentHome () {
     '/images/منوی-سرد-کافی-شاپ.jpg'
   ])
 
+
+  
   return (
     <div className='home_content'>
       <section>
