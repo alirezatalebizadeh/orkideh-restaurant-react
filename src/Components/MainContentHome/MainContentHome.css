@@ -6,15 +6,18 @@ section .description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  /* padding: 15px; */
   gap: 25px;
   overflow: hidden;
 }
+
 .description .sliderText {
+  flex-basis: 50%;
   max-width: 500px;
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 section .description .info {
@@ -34,6 +37,7 @@ section .description .info {
   font-size: 1.9rem;
   font-weight: 800;
 }
+
 .home_content .info p {
   font-size: 0.9rem;
 }
@@ -48,11 +52,13 @@ section .description .info {
   .home_content .info h2 {
     margin-bottom: 20px !important;
   }
+
   section .description .sliderText {
     width: 400px !important;
     height: 250px !important;
   }
 }
+
 @media screen and (max-width: 769px) {
   section .description {
     flex-direction: column;
@@ -61,16 +67,20 @@ section .description .info {
   section .description.reverse {
     flex-direction: column-reverse;
   }
+
   section .description .info {
     width: 100% !important;
   }
+
   .home_content .description .sliderText {
     width: 100% !important;
   }
+
   .home_content .description {
     padding: 0 !important;
   }
 }
+
 .home_content .info h2 {
   margin-bottom: 40px;
   font-size: 1.9rem;

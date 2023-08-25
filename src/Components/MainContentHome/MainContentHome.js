@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
-import './MainContentHome.css'
 import InfoText from './InfoText/InfoText'
 import SliderText from './SliderText/SliderText'
+import './MainContentHome.css'
+
+
+
+
 
 export default function MainContentHome () {
   const [txt1, setTxt1] = useState([
@@ -62,6 +66,7 @@ export default function MainContentHome () {
   ])
 
 
+  
   
   return (
     <div className='home_content'>
