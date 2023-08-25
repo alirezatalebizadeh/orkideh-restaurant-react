@@ -5,13 +5,15 @@
 .footer-area {
   padding-top: 50px;
   padding-bottom: 0px;
-  margin:  0 20px;
+  margin: 0 20px;
   direction: rtl;
 }
+
 .footer-area ul {
   list-style: none;
   line-height: 30px;
 }
+
 .bg-f {
   background-image: url("./../../../public/images/footer-bg.jpg");
   background-attachment: scroll;
@@ -204,9 +206,11 @@
   background-position: center;
   background-size: cover;
 }
+
 footer a {
   transform: scale(1.2) !important;
 }
+
 /*------------------------------------------------------------------
    end style of Footer
 -------------------------------------------------------------------*/

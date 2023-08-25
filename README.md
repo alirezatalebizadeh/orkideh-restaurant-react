@@ -3,13 +3,8 @@
 i,m a web developer and i develope this website with react.
 i hope you like it...
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+i use a lot of library in react that create this project .
+for example :
+```iHover ```
+```React-Bootstrap```
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
