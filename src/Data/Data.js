@@ -55,7 +55,7 @@ const imgSrcGallery = [
 ]
 
 
-export {imgSrcGallery}
-export default  articles 
+export { imgSrcGallery }
+export default articles
 
 
