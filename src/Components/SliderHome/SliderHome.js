@@ -46,8 +46,8 @@ export default function SliderHome () {
                 loop
                 cursor
                 cursorStyle='.'
-                typeSpeed={40}
-                deleteSpeed={50}
+                typeSpeed={120}
+                deleteSpeed={30}
                 delaySpeed={1000}
                 words={[
                   'رستوران زنجیره ای ارکیده',
@@ -70,8 +70,8 @@ export default function SliderHome () {
                 loop
                 cursor
                 cursorStyle='.'
-                typeSpeed={30}
-                deleteSpeed={60}
+                typeSpeed={120}
+                deleteSpeed={30}
                 delaySpeed={1000}
                 words={[
                   'رستوران زنجیره ای ارکیده',

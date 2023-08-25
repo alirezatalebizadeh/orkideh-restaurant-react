@@ -34,4 +34,28 @@ const articles = [
   }
 ]
 
-export default articles
+const imgSrcGallery = [
+  'images/گالری - رستوران ارکیده1_files/1-3.jpg',
+  'images/گالری - رستوران ارکیده1_files/1-4.jpg',
+  'images/گالری - رستوران ارکیده1_files/10-1.jpg',
+  'images/گالری - رستوران ارکیده1_files/10.jpg',
+  'images/گالری - رستوران ارکیده1_files/11-1.jpg',
+  'images/گالری - رستوران ارکیده1_files/12.jpg',
+  'images/گالری - رستوران ارکیده1_files/13.jpg',
+  'images/گالری - رستوران ارکیده1_files/14-1.jpg',
+  'images/گالری - رستوران ارکیده1_files/15.jpg',
+  'images/گالری - رستوران ارکیده1_files/17.jpg',
+  'images/گالری - رستوران ارکیده1_files/18.jpg',
+  'images/گالری - رستوران ارکیده1_files/19(1).jpg',
+  'images/گالری - رستوران ارکیده1_files/2.jpg',
+  'images/گالری - رستوران ارکیده1_files/222.jpg',
+  'images/گالری - رستوران ارکیده1_files/19.jpg',
+  'images/گالری - رستوران ارکیده1_files/5.jpg'
+
+]
+
+
+export {imgSrcGallery}
+export default  articles 
+
+

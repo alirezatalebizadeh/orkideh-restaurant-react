@@ -5,6 +5,7 @@ import ArticleItem from './ArticleItem'
 
 export default function ArticleBox () {
   const contextData = useContext(orkidehData)
+  // console.log(contextData.articlesData);
 
   return (
     <section className='articles'>

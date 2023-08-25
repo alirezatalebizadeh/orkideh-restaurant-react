@@ -11,7 +11,6 @@ import './SliderText.css'
 import { Autoplay, EffectFlip } from 'swiper/modules'
 
 export default function SliderText (props) {
-  console.log(props)
   return (
     <Swiper
       effect={'flip'}
