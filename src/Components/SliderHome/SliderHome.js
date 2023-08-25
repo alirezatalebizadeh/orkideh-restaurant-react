@@ -40,7 +40,7 @@ export default function SliderHome () {
         className='mySwiper'
       >
         <SwiperSlide>
-          <div class='info'>
+          <div className='info'>
             <h1 className='title'>
               <Typewriter
                 loop
@@ -64,7 +64,7 @@ export default function SliderHome () {
           <img src='images/1.jpg' alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <div class='info'>
+          <div className='info'>
             <h1 className='title'>
               <Typewriter
                 loop
