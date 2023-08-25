@@ -1,4 +1,6 @@
 import React from 'react'
+import { AiOutlineHeart,AiOutlineLine } from 'react-icons/ai';
+
 // !Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -16,7 +18,15 @@ import './GallerySlider.css'
 export default function GallerySlider() {
     return (
         <div className="Gallery_slider">
+            {/* // !image of backGround */}
             <img src='/images/jaDEH.JPG' loading='lazy' className='bag_container' />
+
+            <div className="info text-center" >
+                <h3 className="title">گالری</h3>
+                <h1 className="sub_title">مجموعه رستوران زنجیره ای ارکیده</h1>
+                <span><AiOutlineLine className='line'/> <AiOutlineHeart className='heart' /> <AiOutlineLine className='line'/></span>
+            </div>
+
             <Swiper
                 navigation={true}
                 slidesPerView={1}

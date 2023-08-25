@@ -5,6 +5,16 @@
     overflow: hidden;
 }
 
+.Gallery_slider .heart {
+    color: orange;
+    font-size: 2.5rem;
+}
+
+.Gallery_slider .line {
+    color: rgb(255, 255, 254);
+    font-size: 4rem;
+}
+
 .Gallery_slider .bag_container {
     position: absolute;
     top: 0;
@@ -13,19 +23,19 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    opacity: .9;
-    z-index: -100;
+    filter: blur(2px);
+
 }
+
 
 .Gallery_slider .mySwiper {
     position: absolute;
     bottom: 50px;
     left: 0;
-    height: 250px;
+    height: 200px;
     width: 100%;
     text-align: center;
     overflow: visible;
-
 }
 
 .Gallery_slider .mySwiper .swiper-slide {
@@ -40,10 +50,17 @@
     border-radius: 10px;
 }
 
+.Gallery_slider .mySwiper .swiper-button-prev:after,
+.Gallery_slider .mySwiper .swiper-button-next:after {
+    font-size: 1.9rem;
+    font-feature-settings: ;
+    color: orange;
+}
+
 .Gallery_slider .mySwiper .swiper-button-next {
     top: -45px;
     left: 52%;
-    z-index: 100000;
+    /* z-index: 100000; */
     background-color: #fff;
     padding: 10px 25px;
     border-radius: 5px;
@@ -52,8 +69,8 @@
 
 .Gallery_slider .mySwiper .swiper-button-prev {
     top: -45px;
-    left: 45%;
-    z-index: 100000;
+    left: 43%;
+    /* z-index: 100000; */
     background-color: #fff;
     padding: 10px 25px;
     border-radius: 5px;
@@ -71,13 +88,54 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .Gallery_slider .mySwiper .swiper-button-next {
+        left: 51% !important;
+    }
+
+    .Gallery_slider .mySwiper .swiper-button-prev {
+        left: 32% !important;
+    }
+
+}
 @media screen and (max-width: 750px) {
     .Gallery_slider .mySwiper .swiper-button-next {
         left: 54% !important;
-
     }
 
     .Gallery_slider .mySwiper .swiper-button-prev {
         left: 38%;
     }
+
+    .Gallery_slider .heart {
+        font-size: 1.5rem !important;
+    }
+
+    .Gallery_slider .line {
+        font-size: 2rem !important;
+    }
+
 }
+
+.Gallery_slider .info {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+}
+
+
+.Gallery_slider .title {
+    font-size: 2.5rem;
+    color: orange !important;
+
+}
+
+.Gallery_slider .sub_title {
+    font-size: 1.9rem;
+    color: #fff !important;
+    font-weight: 900;
+}
+
+.Gallery_slider .Heart {}
