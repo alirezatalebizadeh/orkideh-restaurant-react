@@ -7,9 +7,8 @@ import Menus from './Pages/Menus/Menus'
 let routes = [
   { path: '/*', element: <Home /> },
   { path: '/gallery', element: <Gallery /> },
-  { path: '/menus', element: <Home /> },
-  { path: '/marasem', element: <Marasem /> },
-  { path: '/menu', element: <Menus /> }
+  { path: '/menus', element: <Menus /> },
+  { path: '/marasem', element: <Marasem /> }
 ]
 
 export default routes

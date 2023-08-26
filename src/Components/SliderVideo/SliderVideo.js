@@ -11,8 +11,8 @@ import './SliderVideo.css'
 
 // import required modules
 import { Navigation } from 'swiper/modules';
-import { Prev } from 'react-bootstrap/esm/PageItem';
-import userEvent from '@testing-library/user-event';
+// import { Prev } from 'react-bootstrap/esm/PageItem';
+// import userEvent from '@testing-library/user-event';
 
 
 

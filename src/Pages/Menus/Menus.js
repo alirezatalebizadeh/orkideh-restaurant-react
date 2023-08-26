@@ -1,5 +1,10 @@
-import React from "react";
-
-export default function Menus() {
-  return <div>menu</div>;
+import React from 'react'
+import SliderMenu from '../../Components/SliderMenu/SliderMenu'
+import './Menus.css'
+export default function Menus () {
+  return (
+    <div className='Menus'>
+      <SliderMenu />
+    </div>
+  )
 }
