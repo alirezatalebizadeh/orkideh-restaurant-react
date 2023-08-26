@@ -5,6 +5,8 @@ import Footer from './Components/Footer/Footer'
 //! import data
 import { imgSrcGallery } from './Data/Data'
 import { MarasemData } from './Data/Data'
+import { menusSliderData } from './Data/Data'
+import { menuData } from './Data/Data'
 import articles from './Data/Data'
 //! impoer context
 import orkidehData from './Context/Context'
@@ -17,9 +19,9 @@ function App () {
   const [articlesData, setArticles] = useState(articles)
   const [srcImgData, setSrcImgData] = useState(imgSrcGallery)
   const [marasemData, setMarasemData] = useState(MarasemData)
+  const [menuSliderSrc, setMenuSliderSrc] = useState(menusSliderData)
+  const [menuItems, setMenuItems] = useState(menuData)
   let router = useRoutes(routes)
-
-  // console.log(srcImgData);
 
   return (
     <div className='App'>
@@ -27,7 +29,9 @@ function App () {
         value={{
           articlesData,
           srcImgData,
-          marasemData
+          marasemData,
+          menuSliderSrc,
+          menuItems
         }}
       >
         <Header />

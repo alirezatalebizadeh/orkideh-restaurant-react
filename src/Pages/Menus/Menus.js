@@ -5,6 +5,8 @@ export default function Menus () {
   return (
     <div className='Menus'>
       <SliderMenu />
+
+      
     </div>
   )
 }
