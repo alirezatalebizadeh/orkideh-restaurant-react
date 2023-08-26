@@ -13,7 +13,7 @@ import './SliderMenu.css'
 // import required modules
 import { Navigation, Autoplay } from 'swiper/modules'
 
-export default function SliderMenu () {
+export default function SliderMenu() {
   const contextData = useContext(orkidehData)
   const [allData, setAllData] = useState([])
 
