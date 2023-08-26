@@ -14,7 +14,7 @@ export default function ContentMarasem (props) {
       <Container fluid className='pt-5 pb-3'>
         <TopTitle />
 
-        <Container fluid className='timeline position-relative p-0'>
+        <Container fluid className='timeline position-relative content p-0'>
           {contextData.marasemData.map(item => (
             <RowCart {...item} />
           ))}

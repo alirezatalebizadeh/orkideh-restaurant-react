@@ -12,6 +12,7 @@ export default function Gallery() {
     <GallerySlider />
     <h2 className="title">گالری ما </h2>
     <GalleryHover />
+
     
   </div>;
 }
