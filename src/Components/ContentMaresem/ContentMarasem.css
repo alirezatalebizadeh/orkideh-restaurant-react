@@ -2,6 +2,17 @@
     margin: 150px 0;
 }
 
+.content {
+    margin-top: 50px;
+}
+
+
+
+.section-title .far {
+    color: red;
+    font-size: 2rem;
+}
+
 .section-title::before {
     background: #ffffff !important;
 }
@@ -38,4 +49,24 @@ img {
 
 p {
     font-size: 1.1rem !important;
+}
+
+.content_marasem .title {
+    font-size: 1.8rem !important;
+}
+
+.content_marasem .subTitle {
+    font-size: 1.8rem !important;
+}
+
+
+@media screen and (max-width: 700px) {
+    .content_marasem .title {
+        font-size: 1.2rem !important;
+    }
+
+    .content_marasem .subTitle {
+        font-size: 1.3rem !important;
+    }
+
 }
