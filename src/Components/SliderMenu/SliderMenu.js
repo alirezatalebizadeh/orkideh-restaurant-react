@@ -1,4 +1,5 @@
-import React, { useContext, useRef } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
+import MenuFoods from '../MenuFoods/MenuFoods'
 import orkidehData from '../../Context/Context'
 import ActionFunc from '../MenuFoods/ActionFunc'
 // !Import Swiper React components
@@ -14,48 +15,62 @@ import { Navigation, Autoplay } from 'swiper/modules'
 
 export default function SliderMenu () {
   const contextData = useContext(orkidehData)
+  const [allData, setAllData] = useState([])
+
+  const changeData = async value => {
+    contextData.setPositionRestaurant(value)
+
+    if (value === 'mahestan') {
+      await setAllData(prevstate => [contextData.menuItems.mahestan])
+    } else if (value === '-1') {
+      alert('لطفا یک شعبه را انتخاب کنید')
+    }
+  }
 
   return (
-    <div className='sliderMenu'>
-      <Swiper
-        navigation={true}
-        modules={[Navigation, Autoplay]}
-        className='mySwiper'
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false
-        }}
-      >
-        {contextData.menuSliderSrc.map(item => (
-          <SwiperSlide key={item.id}>
-            <img loading='lazy' src={item.src} alt={item.src} />
-            <div className='content'>
-              <h3>منوی غذا و نوشیدنی ارکیده</h3>
-              <select
-                value={contextData.positionRestaurant}
-                onChange={e => {
-                  contextData.setPositionRestaurant(e.target.value)
-                }}
-                className='countrySelect'
-              >
-                <option className='option'>انتخاب شعبه</option>
-                <option className='option' value='مهستان'>
-                  شعبه مهستان
-                </option>
-                <option className='option' value='جاده چالوس'>
-                  شعبه جاده چالوس
-                </option>
-                <option className='option' value='متل قو'>
-                  شعبه متل قو
-                </option>
-                <option className='option' value='اقدسیه'>
-                  شعبه اقدسیه
-                </option>
-              </select>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <>
+      <div className='sliderMenu'>
+        <Swiper
+          navigation={true}
+          modules={[Navigation, Autoplay]}
+          className='mySwiper'
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false
+          }}
+        >
+          {contextData.menuSliderSrc.map(item => (
+            <SwiperSlide key={item.id}>
+              <img loading='lazy' src={item.src} alt={item.src} />
+              <div className='content'>
+                <h3>منوی غذا و نوشیدنی ارکیده</h3>
+                <select
+                  value={contextData.positionRestaurant}
+                  onChange={e => changeData(e.target.value)}
+                  className='countrySelect'
+                >
+                  <option className='option' value='-1'>
+                    انتخاب شعبه
+                  </option>
+                  <option className='option' value='mahestan'>
+                    شعبه مهستان
+                  </option>
+                  <option className='option' value='chaloos'>
+                    شعبه جاده چالوس
+                  </option>
+                  <option className='option' value='motelGho'>
+                    شعبه متل قو
+                  </option>
+                  <option className='option' value='aghdasieh'>
+                    شعبه اقدسیه
+                  </option>
+                </select>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <MenuFoods allData={allData} />
+    </>
   )
 }

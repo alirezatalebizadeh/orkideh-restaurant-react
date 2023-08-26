@@ -235,7 +235,7 @@ const menuData = {
         descEng: ''
       }
     ],
-    Main_Food: [
+    MainFood: [
       {
         nameEng: 'Orkideh Special Kabab Shishlik',
         name: 'شیشلیک مخصوص ارکیده',

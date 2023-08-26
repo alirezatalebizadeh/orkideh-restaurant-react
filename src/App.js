@@ -22,7 +22,7 @@ function App () {
   const [marasemData, setMarasemData] = useState(MarasemData)
   const [menuSliderSrc, setMenuSliderSrc] = useState(menusSliderData)
   const [menuItems, setMenuItems] = useState(menuData)
-  const [positionRestaurant, setPositionRestaurant] = useState('')
+  const [positionRestaurant, setPositionRestaurant] = useState('-1')
   const [containerMenus, setContainerMenus] = useState([])
 
   return (

@@ -21,6 +21,8 @@ export default function ActionFunc () {
     console.log(contextData.containerMenus)
   }
 
+  return setValueOfSelect()
+
   //   // !create product of mahestan
 
   //   function createItemOfAppetizers () {
