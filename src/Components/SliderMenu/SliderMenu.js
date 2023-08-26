@@ -22,7 +22,14 @@ export default function SliderMenu () {
 
     if (value === 'mahestan') {
       await setAllData(prevstate => [contextData.menuItems.mahestan])
+    } else if (value === 'chaloos') {
+      await setAllData(prevstate => [contextData.menuItems.chaloos])
+    } else if (value === 'aghdasieh') {
+      await setAllData(prevstate => [contextData.menuItems.aghdasieh])
+    } else if (value === 'motelGho') {
+      await setAllData(prevstate => [contextData.menuItems.motelGho])
     } else if (value === '-1') {
+      await setAllData(prevstate => [])
       alert('لطفا یک شعبه را انتخاب کنید')
     }
   }
@@ -58,6 +65,7 @@ export default function SliderMenu () {
                   <option className='option' value='chaloos'>
                     شعبه جاده چالوس
                   </option>
+
                   <option className='option' value='motelGho'>
                     شعبه متل قو
                   </option>

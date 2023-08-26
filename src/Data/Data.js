@@ -459,6 +459,7 @@ const menuData = {
       }
     ]
   },
+
   chaloos: {
     appetizers: [
       {
@@ -565,7 +566,7 @@ const menuData = {
         descEng: ''
       }
     ],
-    Main_Food: [
+    MainFood: [
       {
         nameEng: 'Orkideh Special Kabab Shishlik',
         name: 'شیشلیک مخصوص ارکیده',
@@ -903,7 +904,7 @@ const menuData = {
         descEng: ''
       }
     ],
-    Main_Food: [
+    MainFood: [
       {
         nameEng: 'Orkideh Special Kabab Shishlik',
         name: 'شیشلیک مخصوص ارکیده',
@@ -1241,7 +1242,7 @@ const menuData = {
         descEng: ''
       }
     ],
-    Main_Food: [
+    MainFood: [
       {
         nameEng: 'Orkideh Special Kabab Shishlik',
         name: 'شیشلیک مخصوص ارکیده',
@@ -1331,7 +1332,7 @@ const menuData = {
         descEng: ''
       }
     ],
-    Local_Dishes: [
+    LocalDishes: [
       {
         nameEng: 'Boiled rice with lamb',
         name: 'کته کباب مخصوص',
