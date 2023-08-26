@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import orkidehData from '../../Context/Context'
+import ActionFunc from '../MenuFoods/ActionFunc'
 // !Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -30,7 +31,13 @@ export default function SliderMenu () {
             <img loading='lazy' src={item.src} alt={item.src} />
             <div className='content'>
               <h3>منوی غذا و نوشیدنی ارکیده</h3>
-              <select className='countrySelect'>
+              <select
+                value={contextData.positionRestaurant}
+                onChange={e => {
+                  contextData.setPositionRestaurant(e.target.value)
+                }}
+                className='countrySelect'
+              >
                 <option className='option'>انتخاب شعبه</option>
                 <option className='option' value='مهستان'>
                   شعبه مهستان

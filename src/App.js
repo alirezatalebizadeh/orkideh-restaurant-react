@@ -14,6 +14,7 @@ import './App.css'
 import routes from './routes'
 
 function App () {
+  let router = useRoutes(routes)
   //! set some state to show element and save data
 
   const [articlesData, setArticles] = useState(articles)
@@ -21,7 +22,8 @@ function App () {
   const [marasemData, setMarasemData] = useState(MarasemData)
   const [menuSliderSrc, setMenuSliderSrc] = useState(menusSliderData)
   const [menuItems, setMenuItems] = useState(menuData)
-  let router = useRoutes(routes)
+  const [positionRestaurant, setPositionRestaurant] = useState('')
+  const [containerMenus, setContainerMenus] = useState([])
 
   return (
     <div className='App'>
@@ -31,7 +33,11 @@ function App () {
           srcImgData,
           marasemData,
           menuSliderSrc,
-          menuItems
+          menuItems,
+          positionRestaurant,
+          setPositionRestaurant,
+          containerMenus,
+          setContainerMenus
         }}
       >
         <Header />
