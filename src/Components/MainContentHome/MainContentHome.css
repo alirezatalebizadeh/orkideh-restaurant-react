@@ -5,11 +5,15 @@
 section .description {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
   /* padding: 15px; */
   gap: 25px;
   overflow: hidden;
+margin-top: 20px;
 }
+
+
 
 .description .sliderText {
   flex-basis: 50%;
@@ -85,4 +89,5 @@ section .description .info {
   margin-bottom: 40px;
   font-size: 1.9rem;
   font-weight: 800;
+  color: rgba(0, 0, 0, 0.85) !important;
 }

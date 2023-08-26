@@ -7,7 +7,7 @@ import './MainContentHome.css'
 
 
 
-export default function MainContentHome () {
+export default function MainContentHome() {
   const [txt1, setTxt1] = useState([
     'رستوران‌های زنجیره‌ای ارکیده',
     ` مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار
@@ -66,8 +66,8 @@ export default function MainContentHome () {
   ])
 
 
-  
-  
+
+
   return (
     <div className='home_content'>
       <section>
