@@ -1,0 +1,41 @@
+#story {
+    margin: 150px 0;
+}
+
+.section-title::before {
+    background: #ffffff !important;
+}
+
+.section-title::after {
+    background: #ffffff !important;
+}
+
+.timeline::after {
+    background: #ffffff !important;
+}
+
+h2 {
+    color: #ffffff !important;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 15px;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.timeline .row::after {
+    color: #ff0000 !important;
+}
+
+p {
+    font-size: 1.1rem !important;
+}

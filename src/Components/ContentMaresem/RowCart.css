@@ -1,0 +1,75 @@
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.Row_Box {
+    /* background-color: yellow; */
+    margin: 20px 0;
+}
+
+
+.Row_Box .item {
+    /* background-color: green; */
+}
+
+.content_marasem .img_marasem {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+}
+
+.timeline::after {
+    background: #ffffff !important;
+}
+
+@media (min-width: 768px) {
+
+    .timeline::after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+        background: #E47A2E;
+    }
+}
+
+@media (min-width: 768px) {
+    .timeline .row::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+        background: #FFFFFF;
+        border: 2px solid #E47A2E;
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+}
+
+.timeline .row::after {
+    color: #ff0000 !important;
+}
+
+@media (min-width: 768px) {
+    .timeline .row::after {
+        content: "\f004";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        position: absolute;
+        top: calc(50% - 10px);
+        left: calc(50% - 8px);
+        color: #E47A2E;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content_marasem .img_marasem {
+        height: 300px !important;
+    }
+}

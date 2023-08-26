@@ -1,0 +1,56 @@
+ .sliderMenu {
+     width: 100%;
+     height: 85vh;
+
+ }
+
+
+ .sliderMenu .mySwiper {
+     width: 100%;
+     height: 100%;
+ }
+
+
+ .sliderMenu .mySwiper .swiper-slide {
+     text-align: center;
+     position: relative;
+ }
+
+
+ .sliderMenu .swiper-slide img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+
+ .sliderMenu .swiper-slide .content {
+     position: absolute;
+     top: 18%;
+     width: 100%;
+     z-index: 100;
+ }
+
+
+ .sliderMenu .swiper-slide h3 {
+     margin-bottom: 50px;
+     font-size: 25px;
+     color: rgb(255, 255, 255);
+ }
+
+
+ .sliderMenu .swiper-slide .content select {
+     text-align: center;
+     padding: 10px 16px;
+     border-radius: 10px;
+     border-color: transparent;
+     font-size: 1rem;
+     border: none;
+     outline: none;
+     line-height: 100px;
+ }
