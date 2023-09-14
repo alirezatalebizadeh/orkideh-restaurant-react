@@ -35,7 +35,15 @@ const articles = [
 ]
 
 const imgSrcGallery = [
-  'images/گالری - رستوران ارکیده1_files/1-3.jpg',
+  {
+    id: 1,
+    title: 'buttermilk pancakes',
+    category: 'breakfast',
+    price: 15.99,
+    img: 'images/گالری - رستوران ارکیده1_files/1-3.jpg',
+    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `
+  },
+  '',
   'images/گالری - رستوران ارکیده1_files/1-4.jpg',
   'images/گالری - رستوران ارکیده1_files/10-1.jpg',
   'images/گالری - رستوران ارکیده1_files/10.jpg',

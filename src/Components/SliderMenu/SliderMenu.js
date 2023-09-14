@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import MenuFoods from '../MenuFoods/MenuFoods'
 import orkidehData from '../../Context/Context'
-import ActionFunc from '../MenuFoods/ActionFunc'
 // !Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -13,7 +12,7 @@ import './SliderMenu.css'
 // import required modules
 import { Navigation, Autoplay } from 'swiper/modules'
 
-export default function SliderMenu() {
+export default function SliderMenu () {
   const contextData = useContext(orkidehData)
   const [allData, setAllData] = useState([])
 

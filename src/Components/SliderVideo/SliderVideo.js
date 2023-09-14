@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 // !Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -17,9 +17,6 @@ import { Navigation } from 'swiper/modules';
 
 
 export default function SliderVideo() {
-    const myVideo1 = useRef()
-    const myVideo2 = useRef()
-    const myVideo3 = useRef()
 
     //Todo  see bottom code and do this
 
@@ -31,17 +28,17 @@ export default function SliderVideo() {
                 modules={[Navigation]}
                 className="mySwiper">
                 <SwiperSlide>
-                    <video ref={myVideo1} className='video' controls poster="/images/mahestan-bg2.jpg">
+                    <video className='video' controls poster="/images/mahestan-bg2.jpg">
                         <source src="video/مهستان.mp4" type="video/mp4" />
                     </video>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <video ref={myVideo2} className='video' controls poster="/images/aghdasieh.jpg">
+                    <video className='video' controls poster="/images/aghdasieh.jpg">
                         <source src="video/اقدسیه.mp4" type="video/mp4" />
                     </video>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <video ref={myVideo3} className='video' controls poster="/images/chaloos-bg.jpg">
+                    <video className='video' controls poster="/images/chaloos-bg.jpg">
                         <source src="video/چالوس.mp4" type="video/mp4" />
                     </video>
                 </SwiperSlide>
@@ -50,18 +47,3 @@ export default function SliderVideo() {
     )
 }
 
-// let nxtBtn = document.querySelector('.swiper-button-next')
-// let prvBtn = document.querySelector('.swiper-button-prev')
-// let videoElems = document.querySelectorAll('#player')
-
-
-
-// function pauseVideo() {
-//     videoElems.forEach(video => {
-//         video.pause();
-//     })
-// }
-
-
-// prvBtn.addEventListener('click', pauseVideo)
-// nxtBtn.addEventListener('click', pauseVideo)

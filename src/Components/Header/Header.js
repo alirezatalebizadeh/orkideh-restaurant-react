@@ -6,7 +6,8 @@ import {
   Nav,
   Navbar,
   Offcanvas,
-  NavDropdown,
+  NavDropdown
+
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
@@ -48,6 +49,9 @@ export default function Header() {
               </Link>
               <Link className="item_link" to="/marasem">
                 شرح مراسم
+              </Link>
+              <Link className="item_link" to="/still">
+                ثبت مهارت
               </Link>
               {/* <NavDropdown
                 className="Drop_down"
